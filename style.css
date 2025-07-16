@@ -12,6 +12,9 @@
 .display-flex{
     display: flex;
 }
+.text-primary{
+      color: #FF900E;
+}
 /* dark 02 */
 .text-gray{
   color:  #424242;
@@ -36,6 +39,13 @@ color: #727272;
     border: none;
 }
 
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
 /* header starts here */
 
 
@@ -83,6 +93,32 @@ color: #727272;
 
 .banner-images{
     width: 100%;
+}
+
+/* teams features style */
+.teams{
+    
+    align-items: center;
+    /* gap: 20px; */
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.our-features{
+    margin-left: 60px;
+    max-width: 530px;
+}
+
+.features-title{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+#Quick-list {
+    font-weight: 400;
 }
 /* responsive media quary */
 @media screen and (max-width: 576px) {
