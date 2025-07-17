@@ -125,7 +125,27 @@ main > section{
 #Quick-list {
     font-weight: 400;
 }
-
+/* features related styles */
+.features{
+    gap: 100px;
+}
+#features-section-title{
+    border-left:10px solid red ;
+    padding-left: 20px;
+}
+.features-card{
+     padding: 30px;
+    box-shadow: 0 4px 30px 0 rgb(172, 167, 172);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.features-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+}
 /* some facts related style */
 
 .facts-container{
@@ -173,6 +193,7 @@ main > section{
 .sponsors-companies img{
     filter: grayscale(100%);
 }
+
 /* responsive media quary */
 @media screen and (max-width: 576px) {
     .navbar,
@@ -181,9 +202,11 @@ main > section{
         flex-direction: column;
     }
 
-    .teams-img-, 
+    .teams-img, 
     .facts-container,
-    .sponsors-companies{
+    .sponsors-companies,
+    .teams-img-container,
+    .some-facts{
        grid-template-columns: repeat(1, 1fr);
  }
 
